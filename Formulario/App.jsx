@@ -5,6 +5,7 @@ const App = ()=> {
      
      const [cep, setCep] = React.useState('')
      const [error, setError] = React.useState(null)
+     const [senha, setSenha] = React.useState(null)
     
 
      function validaCep(value){
@@ -19,6 +20,7 @@ const App = ()=> {
             return true
          }
      }
+    
 
      function handleBlur({target}){
         validaCep(target.value)
@@ -31,22 +33,38 @@ const App = ()=> {
 
     return(
          <form onSubmit={preventDefault}>
-            <label htmlFor="cep">CEP</label>
+            <label htmlFor="senha">SENHA</label>
             <input 
 
             style={error ? {borderColor:"red"}:
             {borderColor:"green"}}
 
             type="text" 
-            id="cep"
-            value={cep}
+            id="senha"
+            value={senha}
             onBlur={handleBlur}
-            onChange={({target})=>setCep(target.value)}
+            onChange={({target})=>setSenha(target.value)}
             />
             {error && <p>{error}</p>}
             <button>Enviar</button>
           
-         </form>
+         {preventDefault}
+          <label htmlFor="cep">CEP</label>
+          <input 
+
+          style={error ? {borderColor:"red"}:
+          {borderColor:"green"}}
+
+          type="text" 
+          id="cep"
+          value={cep}
+          onBlur={handleBlur}
+          onChange={({target})=>setCep(target.value)}
+          />
+          {error && <p>{error}</p>}
+          <button>Enviar</button>
+        
+       </form>
     )
 }
 export default App;

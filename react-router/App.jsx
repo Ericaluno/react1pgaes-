@@ -1,6 +1,6 @@
 
 
-// import {BrowserRouter, Routes, Route,  } from "react-router-dom"
+//  import { Routes,  } from "react-router-dom"
 //  import Contato from "./Contato"
 //  import Home from "./Home"
 // import Sobre from "./Sobre"
@@ -18,6 +18,7 @@ const App = () =>{
     return(
       
       <>
+     
       
       <div className="caixa">
       <h1>Son-Goku</h1>
@@ -47,7 +48,6 @@ Como protagonista central da franquia, Son Goku aparece em todos os mangás, ani
           <p>Cidade:Japão</p>
           <p>Idade:730</p>
           <p>Freeza (Furīza?) é um personagem fictício da série de mangá Dragon Ball, criado por Akira Toriyama. Ele fez sua estréia no Capítulo # 247: Namekusei, Frio e Nublado (An'un Uzumaku Namekkusei), publicado pela primeira vez na revista Weekly Shōnen Jump em 6 de novembro de 1989, como um temido tirano alienígena conhecido como "o ser mais poderoso do universo".
-
 Apesar de não aparecer até à segunda metade do mangá, Freeza é amplamente considerado o antagonista mais icônico da série devido a servir efetivamente como o catalisador de muitos dos eventos descritos na história, como a chegada de Goku na Terra, os Saiyajins terem aterrissado na Terra e, posteriormente, os personagens principais irem para o planeta Namekusei. Ele também é diretamente responsável pelo assassinato de Bardock, pelo genocídio da raça Saiyajin e pela segunda morte de Kuririn, o que o torna o inimigo mais pessoal e significativo de Goku.</p>
         </div>
         <div className="GH">
@@ -59,10 +59,7 @@ Apesar de não aparecer até à segunda metade do mangá, Freeza é amplamente c
           <p>Son Gohan (Son Gohan?), também conhecido apenas como Gohan, é um personagem fictício da franquia Dragon Ball criado por Akira Toriyama. Ele aparece na segunda parte do mangá, que corresponde ao anime Dragon Ball Z. Gohan é filho do protagonista Goku com sua esposa Chi-Chi e o primeiro híbrido entre humano e Saiyajin mostrado na série, seu nome é uma homenagem ao avô adotivo de seu pai, Son Gohan que foi aluno de Mestre Kame, assim como Goku. Um tema recorrente na série é o grande poder oculto de Gohan, que aos poucos é liberado.</p>
           
         </div>
-      </>
-      
-      
-     
+        </>       
     )
 }
 
